@@ -22,17 +22,17 @@ require "pig_latin"
 describe "#translate" do
 
   it "translates a word beginning with a vowel" do
-    s = translate("apple")
+    s = translateword("apple")
     expect(s).to eq("appleay")
   end
 
   it "translates a word beginning with a consonant" do
-    s = translate("banana")
+    s = translateword("banana")
     expect(s).to eq("ananabay")
   end
 
   it "translates a word beginning with two consonants" do
-    s = translate("cherry")
+    s = translateword("cherry")
     expect(s).to eq("errychay")
   end
 

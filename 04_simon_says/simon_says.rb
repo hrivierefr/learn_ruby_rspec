@@ -23,9 +23,9 @@ end
 def titleize(string)
 
 	tab = []
+	i = 0
 
 	string.split.each { |word|
-		i = 0
 		if word.size <= 3 && i != 0 
 			tab << word
 		else
